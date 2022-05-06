@@ -1,6 +1,6 @@
 Flow report for proj_01
-Thu May  5 16:15:30 2022
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Thu May 05 22:31:25 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu May  5 16:15:30 2022       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Flow Status                     ; Successful - Thu May 05 22:31:25 2022       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; proj_01                                     ;
 ; Top-level Entity Name           ; proj_01                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 5 / 56,480 ( < 1 % )                        ;
-; Total registers                 ; 5                                           ;
+; Logic utilization (in ALMs)     ; 19 / 56,480 ( < 1 % )                       ;
+; Total registers                 ; 9                                           ;
 ; Total pins                      ; 9 / 268 ( 3 % )                             ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/05/2022 16:14:21 ;
+; Start date & time ; 05/05/2022 22:26:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; proj_01             ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 57277340920692.165177806113189         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 193912851200157.165180039110440        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -99,26 +99,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 452 MB              ; 00:00:24                           ;
-; Fitter               ; 00:00:42     ; 1.0                     ; 1621 MB             ; 00:01:08                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 518 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 806 MB              ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 703 MB              ; 00:00:01                           ;
-; Total                ; 00:01:06     ; --                      ; --                  ; 00:01:46                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4822 MB             ; 00:00:29                           ;
+; Fitter               ; 00:00:42     ; 1.0                     ; 6721 MB             ; 00:01:21                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4825 MB             ; 00:00:10                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 5189 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; Total                ; 00:01:15     ; --                      ; --                  ; 00:02:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+----------------------+------------------+----------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
-+----------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis ; q-notebook       ; Ubuntu 16.04.7 ; 16         ; x86_64         ;
-; Fitter               ; q-notebook       ; Ubuntu 16.04.7 ; 16         ; x86_64         ;
-; Assembler            ; q-notebook       ; Ubuntu 16.04.7 ; 16         ; x86_64         ;
-; Timing Analyzer      ; q-notebook       ; Ubuntu 16.04.7 ; 16         ; x86_64         ;
-; EDA Netlist Writer   ; q-notebook       ; Ubuntu 16.04.7 ; 16         ; x86_64         ;
-+----------------------+------------------+----------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; LAPTOP-VL3A5UT2  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-VL3A5UT2  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-VL3A5UT2  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-VL3A5UT2  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-VL3A5UT2  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-VL3A5UT2  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-VL3A5UT2  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
@@ -129,6 +133,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off proj_01 -c proj
 quartus_asm --read_settings_files=off --write_settings_files=off proj_01 -c proj_01
 quartus_sta proj_01 -c proj_01
 quartus_eda --read_settings_files=off --write_settings_files=off proj_01 -c proj_01
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proj_01 -c proj_01 --vector_source=C:/Users/victo/repos/cl2/proj_01/Waveform.vwf --testbench_file=C:/Users/victo/repos/cl2/proj_01/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/victo/repos/cl2/proj_01/simulation/qsim/ proj_01 -c proj_01
 
 
 

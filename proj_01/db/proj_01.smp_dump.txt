@@ -1,9 +1,9 @@
 
 State Machine - |proj_01|state
-Name state.101 state.100 state.011 state.010 state.001 state.000 
-state.000 0 0 0 0 0 0 
-state.001 0 0 0 0 1 1 
-state.010 0 0 0 1 0 1 
-state.011 0 0 1 0 0 1 
-state.100 0 1 0 0 0 1 
-state.101 1 0 0 0 0 1 
+Name state.b_b state.y_y state.r_y state.r_g state.y_r state.g_r 
+state.g_r 0 0 0 0 0 0 
+state.y_r 0 0 0 0 1 1 
+state.r_g 0 0 0 1 0 1 
+state.r_y 0 0 1 0 0 1 
+state.y_y 0 1 0 0 0 1 
+state.b_b 1 0 0 0 0 1 
